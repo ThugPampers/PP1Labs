@@ -1,0 +1,20 @@
+#include <cmath>
+#include <iostream>
+using namespace std;
+int main()
+{
+   int otvet, idk;
+   cin >> idk;
+   int ochered[idk];
+   for (int n = 0; n < idk; )
+   {
+   cin >> ochered[n];
+   n++;
+   }
+   for (int n = 0; n < idk; n++)
+   {
+   otvet = ochered[n]*ochered[n];
+   cout << otvet << " ";
+   }
+
+}

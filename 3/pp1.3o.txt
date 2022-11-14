@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+#define MAX 1000
+int main()
+{
+    int array[MAX];
+    int ustal, i, m;
+    int temp;
+    cin >> ustal;
+    for (i = 0; i < ustal; i++)
+    {
+        cin >> array[i];
+    }
+    for (i = 0; i < ustal; i++)
+    {
+        for (m = i + 1; m < ustal; m++)
+        {
+            if (array[i] < array[m])
+            {
+                temp = array[i];
+                array[i] = array[m];
+                array[m] = temp;
+            }
+        }
+    }
+    cout << " " << endl;
+    for (i = 0; i < ustal; i++)
+        cout << array[i]<<" ";
+    cout << endl;
+    return 0;
+}
