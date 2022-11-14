@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n,k,sum;
+    k=0;
+    cin>>n;
+    sum=0;
+    while(k<n){
+    k++;
+    sum = sum + k;
+    }
+    cout<<sum;
+}
