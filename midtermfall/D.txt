@@ -1,0 +1,42 @@
+#include <iostream> 
+#include <algorithm> 
+using namespace std; 
+int main(){ 
+    int n; 
+    cin >> n; 
+    int arr[n]; 
+    for(int i = 0; i < n; i++){ 
+    cin >> arr[i]; 
+    } 
+    sort(arr, arr + n); 
+    int cnt = 1; 
+    int max = 1; 
+    for(int i = 0; i < n; i++){ 
+        if(arr[i] == arr[i + 1]){ 
+            cnt++;
+        }
+        else{
+            if(cnt > max){
+                max = cnt;
+            }
+            cnt = 1;
+        }
+    }
+    int arr2[n];
+    int j = 0;
+    for(int i = 0; i < n; i++){ 
+        if(arr[i] == arr[i + 1]){ 
+            cnt++;
+        }
+        else{
+            if(cnt == max){
+             arr2[j] = arr[i];
+       j++;
+   }
+            cnt = 1;
+        }
+    }
+    for(int i = j - 1; i >=0; i--){
+     cout << arr2[i] << " ";
+ }
+}

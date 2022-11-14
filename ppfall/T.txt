@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+#include <cmath>
+int main()
+{
+int rzmer,mid;
+cin >> rzmer;
+int arr[rzmer];
+for (int i = 0; i < rzmer; i++)
+{cin >> arr[i];}
+for (int i = 0; i < rzmer; i++)
+{int obshee = 0;
+while(arr[i]>0)
+{   mid=arr[i]%10;
+    obshee += mid;
+    arr[i] = arr[i]/10;}
+for (int i = 0;i<rzmer ;i++ )
+{
+    if (obshee%2==1)
+    {cout << "Sum of digits is odd!" << endl;}
+    else if (obshee==0)
+    {cout << "0"<< endl;}
+    else
+    cout << "Sum of digits is even!" << endl;
+    break;
+}
+}
+}

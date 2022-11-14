@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int q;
+    cin >> q;
+    string w[q];
+    for(int i=0;i<q;i++)
+    {
+        cin >> w[i];
+    }
+    char j[100000000];
+    int z=0;
+    for(int i=0;i<q;i++)
+    {
+        for(int s=0;s<w[i].size();s++)
+        {
+            if(w[i][s] != '0')
+            {
+                j[z] = w[i][s];
+                z++;
+            }
+        }
+    }
+    int c=0;
+    for(int i=0;i<z/2;i++)
+    {
+        if(j[i] != j[z-1-c])
+        {
+            cout <<"NO";
+            return 0;
+        }
+        c++;
+    }
+    cout <<"YES";
+}

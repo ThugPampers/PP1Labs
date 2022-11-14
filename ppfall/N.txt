@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+long long int aibolit,dakaaaaaak,vvvvvvvvvvvv;
+cin >> aibolit >> dakaaaaaak >>vvvvvvvvvvvv;
+if (aibolit+dakaaaaaak>vvvvvvvvvvvv & aibolit+vvvvvvvvvvvv>dakaaaaaak & vvvvvvvvvvvv+dakaaaaaak>aibolit)
+{cout << "Yes" << endl;}
+else
+cout << "No" << endl; }

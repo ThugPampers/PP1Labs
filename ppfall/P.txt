@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+long long int oksana, fleshka, grafika;
+cin >> oksana >> fleshka >> grafika;
+if (oksana+fleshka>grafika & grafika+fleshka>oksana & oksana+grafika>fleshka)
+{
+    cout << "Valid" << endl;
+}
+else 
+cout << "Invalid" << endl;
+}

@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+#include <cmath>
+int main()
+{
+    float x, y;
+    cin >> x >> y;
+int day = 1;
+for ( ; x < y; x+=x/10)
+{
+++day;
+}
+cout << day;
+}

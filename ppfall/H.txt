@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+long long int aaa,bbb,ccc,zxcd, ussr;
+cin >> aaa >> bbb >> ccc;
+ussr = aaa+bbb;
+if (ussr/10<ccc)
+{
+    cout << "Boris, you are punished!" << endl;
+}
+else
+cout << "You are my sweet baby" << endl;
+}

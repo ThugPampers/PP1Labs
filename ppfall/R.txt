@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+long long int nosok,nosok2=0, joske, joske2, shadowraze, shadowraze2;
+cin >> nosok;
+int chebupeli1 = 0;
+int chebupeli2 = 1;
+nosok2 = nosok;
+while(nosok>0)
+{
+joske=nosok%10;
+chebupeli1 += joske;
+nosok = nosok/10;
+}
+while(nosok2>0)
+{joske2=nosok2%10;
+chebupeli2 = chebupeli2 * joske2;
+nosok2 = nosok2/10;
+}cout << chebupeli1+chebupeli2 << endl;}

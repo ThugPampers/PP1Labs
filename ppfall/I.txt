@@ -1,0 +1,8 @@
+#include <iostream>
+using  namespace std;
+int main()
+{
+string imya;
+cin >> imya;
+cout << "Hello " << imya << endl;
+}

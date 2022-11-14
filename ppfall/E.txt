@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    int n;
+    cin>>n;
+    float k;
+    k = sqrt(n);
+    if(int(k)*int(k) == n){
+        cout<<"Perfecto";
+    }
+    else
+    cout<<"Simple";
+    return 0;
+}

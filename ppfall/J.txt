@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+long long int AAAA, b, vitaminc, cenazaa, cenazab, cenazac, money;
+cin >> AAAA >> b >> vitaminc >> cenazaa >> cenazab >> cenazac >> money;
+if (AAAA*cenazaa + b*cenazab + vitaminc*cenazac <= money)
+{cout << "Yes" << endl;}
+else 
+cout << "No" << endl;}

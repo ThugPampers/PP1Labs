@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+long long int invalid, evrei, dupstep;
+cin >> invalid >> evrei >> dupstep;
+if (invalid==evrei | evrei == dupstep | invalid == dupstep)
+{cout << "Yes" << endl;}
+else 
+cout << "No" << endl;}

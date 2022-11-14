@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    float a, b, k = 1000;
+    cin >> a >> b;
+    for(int i = -61; i < 61; i++){
+        if(pow(2,i) == b/a){
+            k = i;
+        }
+    }
+    if(k == 1000) {
+        cout << "NO";
+    }
+    else{
+        cout << "YES " << k;
+    }
+}

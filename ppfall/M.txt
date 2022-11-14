@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+#include <cmath>
+int main()
+{
+long long int zxca,peremennayab,peremennayac,neponyal,neponyal2, obshee = 0;
+cin >> zxca >> peremennayab >>peremennayac;
+int fff = 0;
+while (fff<zxca)
+{
+    cout << peremennayab  << " ";
+    obshee = peremennayab +obshee;
+    peremennayab = peremennayab+peremennayac;
+    fff++;
+}
+cout << "\n";
+cout << "sum: " << obshee << endl;
+}

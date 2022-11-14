@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+long long int ZARPLATA,month=1,NAKOPLENIE = 0;
+cin >> ZARPLATA;
+int i=0;
+NAKOPLENIE += ZARPLATA/10*3;
+while (NAKOPLENIE<500000)
+{
+ZARPLATA+=ZARPLATA/10;
+NAKOPLENIE += ZARPLATA/10*3;
+month++;
+}cout << month << endl;}

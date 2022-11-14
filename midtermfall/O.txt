@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int j,k,sum,sumk;
+    cin>>j>>k;
+    int arr[j][k];
+    int arr2[j];
+    for(int i=0;i<j;i++){
+    for(int n=0;n<k;n++){
+    cin>>arr[i][n];
+    }}
+    for(int i=0;i<j;i++){
+    for(int n=0;n<k;n++){
+    sum+=arr[i][n];
+    }
+        arr2[i]=sum/k;
+        sum=0;
+    }
+    for(int i=0;i<j;i++){
+    cout<<arr2[i]<<" ";}
+
+    return 0;
+}

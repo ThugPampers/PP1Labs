@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int dura, dura2,shashlik,tafftune=0;
+cin >> dura;
+dura2=dura;
+while (dura>0)
+{   shashlik = dura % 10;
+    dura = dura / 10;
+    tafftune = (tafftune * 10) + shashlik;}
+if (tafftune==dura2)
+{cout << "YES" << endl;}
+else
+cout << "NO" << endl;}

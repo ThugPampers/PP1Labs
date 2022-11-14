@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+long long int snus, kinul, dislike;
+cin >> snus >> kinul >> dislike;
+if (snus+kinul+dislike==70 | snus+kinul+dislike>70)
+{if (snus+kinul>=30){
+if (dislike>=20)
+{cout << "YES!";}
+else
+cout << "NO." << endl;}
+else
+cout << "NO." << endl;
+}else
+cout << "NO." << endl;}

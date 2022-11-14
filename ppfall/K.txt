@@ -1,0 +1,24 @@
+#include <iostream> 
+int main() {  
+  int N;  
+  int stop=1;  
+  int pseudostop=1; 
+  std::cin>>N;  
+  while (N>0) {  
+    if(stop%2==0 && stop%7!=0) {    
+      N=N-4;    
+      stop++;    
+      pseudostop++;   
+     }   
+    else if (stop%2!=0 && stop%7!=0) { 
+       N=N+3;   
+       stop++;    
+       pseudostop++;   
+     }   
+    else {    
+      stop++;    
+      pseudostop++;  
+    }  
+}  
+std::cout<<pseudostop; 
+}

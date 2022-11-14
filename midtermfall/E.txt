@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    long long n, x, a;
+    cin >> n;
+    int sum = 0;
+
+    while(n > 9) {
+        x = n % 10;
+        sum += x;
+        n = n / 10;
+    }
+    a = sum % 10;
+    if(n == a) {
+        cout << "YES";
+    } else {
+        cout << "NO";
+    }
+   
+}
